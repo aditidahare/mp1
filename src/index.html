@@ -1,13 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aditi Dahare — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header id="site-header" class="header">
+  <nav class="nav">
+    <a class="brand" href="#hero">Aditi</a>
+    <ul class="menu" role="list">
+      <li><a href="#hero"    data-nav="hero">Home</a></li>
+      <li><a href="#about"   data-nav="about">About</a></li>
+      <li><a href="#work"    data-nav="work">Experience</a></li>
+      <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+      <li><a href="#video"   data-nav="video">Video</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+    <div class="pos-indicator" aria-hidden="true"><span></span></div>
+  </nav>
+</header>
+
+<main>
+
+<section id="hero" class="stripe stripe-hero">
+  <div class="container v-center">
+    <h1>Hello, I’m Aditi Dahare.</h1>
+    <p>Graduate student in Information Management – Data Analytics at the University of Illinois Urbana-Champaign, passionate about large-scale data engineering and building reliable data systems.</p>
+    <p>Currently Data Engineering Intern at Synchrony Financial; previously Data Engineering & Governance Associate at Accenture.</p>
+  </div>
+</section>
+
+<section id="about" class="stripe">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I specialize in designing and scaling data solutions that transform complex business requirements into actionable insights. My work spans cloud migration, real-time data pipelines and interactive dashboards.
+    </p>
+    <p>
+      I enjoy working where engineering and analytics meet—leveraging Python, SQL, Java and modern cloud platforms to deliver data-driven products that create measurable business value.
+    </p>
+    <p><strong>Toolbox:</strong> Python · Java · SQL · HTML/SCSS/JavaScript · AWS (S3, Redshift, Glue) · Snowflake · Tableau · Power BI · Git</p>
+  </div>
+</section>
+
+<section id="work" class="stripe">
+  <div class="container multi">
+    <article>
+      <h3>Synchrony Financial – Data Engineering Intern</h3>
+      <ul>
+        <li>Led 100 PB migration from on-prem HDFS to AWS S3 DR environment, eliminating $3.5 M in annual infrastructure costs.</li>
+        <li>Automated Unix and Python validation for petabyte-scale transfers, saving 500+ manual verification hours per cycle.</li>
+        <li>Built real-time data-lineage dashboard for 5K+ S3 buckets, cutting audit prep from three weeks to one.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Accenture – Data Engineering & Governance Associate</h3>
+      <ul>
+        <li>Migrated 283 CI/CD-enabled ETL workflows to cloud, reducing operational cost by $50K annually.</li>
+        <li>Consolidated 17 structured and unstructured data feeds into a Snowflake data warehouse and automated quality checks, reducing reconciliation effort by 78%.</li>
+        <li>Built Tableau dashboards with 13+ KPIs to guide go-to-market strategies for a global pharmaceutical client.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Leadership & Consulting</h3>
+      <ul>
+        <li>Senior Technical Manager, Business Intelligence Group: directed 52 consultants across two client engagements, delivering AI chatbot and dynamic knowledge base.</li>
+        <li>Data Engineering Consultant, Illinois Business Consulting: reengineered frameworks for a Big 4 firm to assess Web3 and Metaverse readiness, cutting client-engagement time by 30%.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="gallery" class="stripe">
+  <div class="container">
+    <h2>Gallery</h2>
+    <!-- keep your existing carousel images or replace with your own -->
+    <div class="carousel" aria-roledescription="carousel">
+      <button class="prev" aria-label="Previous slide">‹</button>
+      <div class="track">
+        <div class="slide"><figure><img src="assets/gallery1.jpg" alt="Data pipeline visual" loading="lazy"><figcaption>Cloud data migration visuals.</figcaption></figure></div>
+        <div class="slide"><figure><img src="assets/gallery2.png" alt="Analytics dashboard" loading="lazy"><figcaption>Interactive dashboards & KPIs.</figcaption></figure></div>
+        <div class="slide"><figure><img src="assets/gallery3.png" alt="Team collaboration" loading="lazy"><figcaption>Leading data engineering teams.</figcaption></figure></div>
+      </div>
+      <button class="next" aria-label="Next slide">›</button>
+    </div>
+  </div>
+</section>
+
+
+<section id="video" class="stripe">
+  <div class="container">
+    <h2>Video</h2>
+    <p class="caption">A quick demo of my data engineering and visualization projects.</p>
+    <video controls width="720" preload="metadata" poster="assets/hero.jpg">
+      <source src="assets/sample.mp4" type="video/mp4" />
+      Sorry, your browser doesn’t support embedded video.
+    </video>
+  </div>
+</section>
+
+<section id="parallax" class="stripe stripe-parallax">
+  <div class="container v-center">
+    <h2>Building reliable data systems that drive business impact.</h2>
+  </div>
+</section>
+
+<section id="contact" class="stripe">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Interested in collaborating or learning more about my work? Let’s connect.</p>
+    <button id="open-modal">Get in touch</button>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer stripe">
+  <div class="container">
+    <p>© 2025 Aditi Dahare. All rights reserved.</p>
+    <nav class="social" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/aditidahare/" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/aditidahare" aria-label="GitHub" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:aditidahare17@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="document">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <h3 id="modal-title">Get in touch</h3>
+    <form id="contact-form" novalidate>
+      <label><span>Name</span><input type="text" name="name" autocomplete="name" required minlength="2" /></label>
+      <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
+      <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+      <div class="actions">
+        <button type="submit" class="btn-primary">Send</button>
+        <button type="button" class="btn-ghost" data-close>Cancel</button>
+      </div>
+      <p class="form-note" id="form-status" aria-live="polite" hidden>Thanks! I’ll reply soon.</p>
+    </form>
+  </div>
+</div>
+
+</body>
 </html>
