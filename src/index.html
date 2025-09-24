@@ -1,167 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aditi Dahare — Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous" referrerpolicy="no-referrer">
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aditi Dahare – Portfolio</title>
 </head>
 <body>
 
-<header id="site-header" class="header">
-  <nav class="nav">
-    <a class="brand" href="#hero">Aditi</a>
-    <ul class="menu" role="list">
-      <li><a href="#hero"    data-nav="hero">Home</a></li>
-      <li><a href="#about"   data-nav="about">About</a></li>
-      <li><a href="#work"    data-nav="work">Experience</a></li>
-      <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
-      <li><a href="#video"   data-nav="video">Video</a></li>
-      <li><a href="#contact" data-nav="contact">Contact</a></li>
-    </ul>
-    <div class="pos-indicator" aria-hidden="true"><span></span></div>
-  </nav>
-</header>
-
-<main>
-
-<section id="hero" class="stripe stripe-hero">
-  <div class="container v-center">
-    <h1>Hello, I’m Aditi Dahare.</h1>
-    <p>Graduate student in Information Management – Data Analytics at the University of Illinois Urbana-Champaign, passionate about large-scale data engineering and building reliable data systems.</p>
-    <p>Currently Data Engineering Intern at Synchrony Financial; previously Data Engineering & Governance Associate at Accenture.</p>
-  </div>
-</section>
-
-<section id="about" class="stripe">
-  <div class="container">
-    <h2>About</h2>
-    <p>
-      I specialize in designing and scaling data solutions that transform complex business requirements into actionable insights. My work spans cloud migration, real-time data pipelines and interactive dashboards.
-    </p>
-    <p>
-      I enjoy working where engineering and analytics meet—leveraging Python, SQL, Java and modern cloud platforms to deliver data-driven products that create measurable business value.
-    </p>
-    <p><strong>Toolbox:</strong> Python · Java · SQL · HTML/SCSS/JavaScript · AWS (S3, Redshift, Glue) · Snowflake · Tableau · Power BI · Git</p>
-  </div>
-</section>
-
-<section id="work" class="stripe">
-  <div class="container multi">
-    <article>
-      <h3>Synchrony Financial – Data Engineering Intern</h3>
-      <ul>
-        <li>Led 100 PB migration from on-prem HDFS to AWS S3 DR environment, eliminating $3.5 M in annual infrastructure costs.</li>
-        <li>Automated Unix and Python validation for petabyte-scale transfers, saving 500+ manual verification hours per cycle.</li>
-        <li>Built real-time data-lineage dashboard for 5K+ S3 buckets, cutting audit prep from three weeks to one.</li>
+  <header id="top" class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">Aditi Dahare</a>
+      <button class="menu-btn" aria-label="menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="nav-links" class="links">
+        <li><a href="#experience" data-target="experience">Experience</a></li>
+        <li><a href="#projects" data-target="projects">Projects</a></li>
+        <li><a href="#skills" data-target="skills">Skills</a></li>
+        <li><a href="#education" data-target="education">Education</a></li>
+        <li><a href="#contact" data-target="contact">Contact</a></li>
+        <li><button id="openModal" class="about-btn" type="button">About</button></li>
       </ul>
-    </article>
+    </nav>
+    <div id="progress" class="progress"></div>
+  </header>
 
-    <article>
-      <h3>Accenture – Data Engineering & Governance Associate</h3>
-      <ul>
-        <li>Migrated 283 CI/CD-enabled ETL workflows to cloud, reducing operational cost by $50K annually.</li>
-        <li>Consolidated 17 structured and unstructured data feeds into a Snowflake data warehouse and automated quality checks, reducing reconciliation effort by 78%.</li>
-        <li>Built Tableau dashboards with 13+ KPIs to guide go-to-market strategies for a global pharmaceutical client.</li>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Leadership & Consulting</h3>
-      <ul>
-        <li>Senior Technical Manager, Business Intelligence Group: directed 52 consultants across two client engagements, delivering AI chatbot and dynamic knowledge base.</li>
-        <li>Data Engineering Consultant, Illinois Business Consulting: reengineered frameworks for a Big 4 firm to assess Web3 and Metaverse readiness, cutting client-engagement time by 30%.</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section id="gallery" class="stripe">
-  <div class="container">
-    <h2>Gallery</h2>
-    <!-- keep your existing carousel images or replace with your own -->
-    <div class="carousel" aria-roledescription="carousel">
-      <button class="prev" aria-label="Previous slide">‹</button>
-      <div class="track">
-        <div class="slide"><figure><img src="assets/gallery1.jpg" alt="Data pipeline visual" loading="lazy"><figcaption>Cloud data migration visuals.</figcaption></figure></div>
-        <div class="slide"><figure><img src="assets/gallery2.png" alt="Analytics dashboard" loading="lazy"><figcaption>Interactive dashboards & KPIs.</figcaption></figure></div>
-        <div class="slide"><figure><img src="assets/gallery3.png" alt="Team collaboration" loading="lazy"><figcaption>Leading data engineering teams.</figcaption></figure></div>
+  <section id="home" class="section hero">
+    <div class="wrap hero-inner fade">
+      <h1>Data Engineering & Analytics</h1>
+      <p>Champaign, IL • <a href="mailto:aditidahare17@gmail.com">aditidahare17@gmail.com</a></p>
+      <div class="hero-buttons">
+        <a class="btn icon-link" href="https://www.linkedin.com/in/aditidahare/" target="_blank" rel="noreferrer">
+          <span class="ico ico-linkedin" aria-hidden="true"></span>LinkedIn
+        </a>
+        <a class="btn icon-link" href="https://github.com/aditidahare" target="_blank" rel="noreferrer">
+          <span class="ico ico-github" aria-hidden="true"></span>GitHub
+        </a>
+        <a class="btn icon-link" href="mailto:aditidahare17@gmail.com">
+          <span class="ico ico-mail" aria-hidden="true"></span>Email
+        </a>
       </div>
-      <button class="next" aria-label="Next slide">›</button>
+    </div>
+  </section>
+
+  <section id="experience" class="section light">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="grid-3">
+        <article class="card fade">
+          <h3>Data Engineering Intern – Synchrony Financial</h3>
+          <p class="meta">May 2025 – Present</p>
+          <ul>
+            <li>Led 100 PB migration from on-prem HDFS to AWS S3 DR environment, eliminating $3.5 M annual infrastructure cost.</li>
+            <li>Automated Unix & Python validation scripts for petabyte-scale transfers, saving 500+ manual hours per cycle.</li>
+            <li>Built real-time data-lineage dashboard for 5K+ S3 buckets, cutting audit prep from three weeks to one.</li>
+          </ul>
+        </article>
+        <article class="card fade">
+          <h3>Data Engineering & Governance Associate – Accenture</h3>
+          <p class="meta">Jun 2022 – Aug 2024</p>
+          <ul>
+            <li>Migrated 283 CI/CD-enabled ETL workflows to cloud, reducing operational cost by $50K annually.</li>
+            <li>Consolidated 17 structured & unstructured data feeds into a Snowflake data warehouse; automated quality checks, reducing reconciliation effort by 78%.</li>
+            <li>Built Tableau dashboards with 13+ KPIs to guide go-to-market strategies for a global pharmaceutical client.</li>
+          </ul>
+        </article>
+        <article class="card fade">
+          <h3>Leadership & Consulting</h3>
+          <p class="meta">2024 – Present</p>
+          <ul>
+            <li>Senior Technical Manager, Business Intelligence Group: directed 52 consultants across two client engagements, delivering AI chatbot and dynamic knowledge base.</li>
+            <li>Data Engineering Consultant, Illinois Business Consulting: re-engineered frameworks for a Big 4 firm to assess Web3 and Metaverse readiness, cutting client-engagement time by 30%.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <div class="carousel">
+        <button class="car-btn prev" aria-label="prev">&#10094;</button>
+        <div id="car-track" class="car-track">
+          <div class="slide current">
+            <figure>
+              <img src="./assets/gallery1.jpg" alt="Data pipeline visual">
+              <figcaption><strong>Cloud Data Migration</strong> – AWS S3 DR pipeline visuals.</figcaption>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure>
+              <img src="./assets/gallery2.png" alt="Analytics dashboard">
+              <figcaption><strong>Interactive Dashboards</strong> – Real-time KPIs with Tableau.</figcaption>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure>
+              <img src="./assets/gallery3.png" alt="Team collaboration">
+              <figcaption><strong>Team Leadership</strong> – Driving cross-functional data projects.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="car-btn next" aria-label="next">&#10095;</button>
+      </div>
+
+      <div id="dots" class="dots">
+        <button class="dot current" aria-label="slide 1"></button>
+        <button class="dot" aria-label="slide 2"></button>
+        <button class="dot" aria-label="slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section light">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <div class="card fade">
+          <h3>Languages & Data</h3>
+          <p>Python, Java, SQL, HTML/SCSS/JS • ETL, Data Warehousing</p>
+        </div>
+        <div class="card fade">
+          <h3>Platforms & Tools</h3>
+          <p>AWS (S3, Redshift, Glue), Snowflake, Tableau, Power BI, Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="edu-list">
+        <div class="edu-item fade">
+          <h3>MS in Information Management – Data Analytics, UIUC</h3>
+          <p>Aug 2024 – May 2026 • GPA 4.0/4.0</p>
+        </div>
+        <div class="edu-item fade">
+          <h3>B.Tech in Computer Science, UIT RGPV</h3>
+          <p>Aug 2018 – May 2022 • GPA 3.86/4.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="section light">
+    <div class="wrap">
+      <h2>Video</h2>
+      <video class="vid" controls poster="./assets/gallery2.png">
+        <source src="assets/sample.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>Name <input name="name" type="text" placeholder="Your name…" required></label>
+        <label>Email <input name="email" type="email" placeholder="NetID@illinois.edu" required></label>
+        <label>Message <textarea name="message" rows="4" placeholder="Type your text here…" required></textarea></label>
+        <button class="btn" type="submit">
+          <span class="spin sm" aria-hidden="true"></span>
+          <span class="btn-text">Send</span>
+        </button>
+      </form>
+
+      <div class="social">
+        <a href="mailto:aditidahare17@gmail.com" class="sico" aria-label="Email"><span class="ico ico-mail"></span></a>
+        <a href="https://www.linkedin.com/in/aditidahare/" class="sico" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span class="ico ico-linkedin"></span></a>
+        <a href="https://github.com/aditidahare" class="sico" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="ico ico-github"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button id="closeModal" class="close" aria-label="close">&times;</button>
+      <h3 id="modalTitle">About this page</h3>
+      <p>This portfolio site was built for CS409 MP1 and demonstrates sticky navbar, carousel, modal, smooth scrolling, responsive layout, and CSS3 animations using only HTML, SCSS and vanilla JavaScript.</p>
     </div>
   </div>
-</section>
 
-
-<section id="video" class="stripe">
-  <div class="container">
-    <h2>Video</h2>
-    <p class="caption">A quick demo of my data engineering and visualization projects.</p>
-    <video controls width="720" preload="metadata" poster="assets/hero.jpg">
-      <source src="assets/sample.mp4" type="video/mp4" />
-      Sorry, your browser doesn’t support embedded video.
-    </video>
-  </div>
-</section>
-
-<section id="parallax" class="stripe stripe-parallax">
-  <div class="container v-center">
-    <h2>Building reliable data systems that drive business impact.</h2>
-  </div>
-</section>
-
-<section id="contact" class="stripe">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Interested in collaborating or learning more about my work? Let’s connect.</p>
-    <button id="open-modal">Get in touch</button>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer stripe">
-  <div class="container">
-    <p>© 2025 Aditi Dahare. All rights reserved.</p>
-    <nav class="social" aria-label="Social links">
-      <a href="https://www.linkedin.com/in/aditidahare/" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/aditidahare" aria-label="GitHub" target="_blank" rel="noopener">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="mailto:aditidahare17@gmail.com" aria-label="Email">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-    </nav>
-  </div>
-</footer>
-
-<!-- Modal -->
-<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-card" role="document">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <h3 id="modal-title">Get in touch</h3>
-    <form id="contact-form" novalidate>
-      <label><span>Name</span><input type="text" name="name" autocomplete="name" required minlength="2" /></label>
-      <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
-      <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
-      <div class="actions">
-        <button type="submit" class="btn-primary">Send</button>
-        <button type="button" class="btn-ghost" data-close>Cancel</button>
-      </div>
-      <p class="form-note" id="form-status" aria-live="polite" hidden>Thanks! I’ll reply soon.</p>
-    </form>
-  </div>
-</div>
-
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Aditi Dahare</p>
+    </div>
+  </footer>
 </body>
 </html>
