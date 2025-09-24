@@ -11,7 +11,7 @@ if (menuBtn) {
   });
 }
 
-// ✅ changed selector to match <header id="top" ...>
+
 const header = document.getElementById('top');
 const progress = document.getElementById('progress');
 const links = Array.from(document.querySelectorAll('#nav-links a[data-target]'));
